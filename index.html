@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Flex</title>
+    <style>
+        body p{
+            font-size: 20px;
+            color: cadetblue;
+        }
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .box{
+            background-color: darkgreen;
+            height: 200px;
+            padding: 30px 20px;
+            border-radius: 10px;
+            color: antiquewhite;
+            font-size: 20px;
+
+            
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>When screen shrink to 576px, flex-direction would turn into column with the help of media query. And we see the boxes in one column: </p>
+    <div class="container">
+         
+        <div class="box">
+            <h3>Flexible Flex</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab consectetur neque consequatur officiis saepe dolore minima dignissimos officia soluta amet!
+        </div>
+        <div class="box">
+            <h3>Flexible Flex</h3>
+            Maiores, distinctio culpa! Quia modi aliquid, quibusdam rem possimus quod nulla voluptatibus nobis adipisci mollitia amet velit, dignissimos a magnam.
+        </div>
+    
+    </div>
+    
+</body>
+</html>
